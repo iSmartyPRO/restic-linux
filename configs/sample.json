@@ -1,0 +1,16 @@
+{
+    "name": "backupName",
+    "backup_source": "/backup/folder/path",
+    "restic": {
+      "password": "restic_password",
+      "repo": "sftp://user@sftserver:/backups/",
+      "RetentionPolicy": {
+        "KeepLast": 5,
+        "KeepDaily": 7,
+        "KeepWeekly": 4,
+        "KeepMonthly": 6,
+        "KeepYearly": 2
+      }
+    }
+  }
+  
